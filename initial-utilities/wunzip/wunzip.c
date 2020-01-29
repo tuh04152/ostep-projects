@@ -9,7 +9,7 @@ int main(int argc, char** argv){
     }
     for (int i = 1; i < argc; i++){
         // For each filename, open the respective file.
-        FILE *fp = fopen(argv[i], "r");
+        FILE *fp = fopen(argv[i], "rb");
         if (fp == NULL){
             printf("wunzip: cannot open file\n");
             exit(1);
